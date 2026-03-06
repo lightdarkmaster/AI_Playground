@@ -1,0 +1,11 @@
+# Requirements for this project
+
+python >= 3.9
+transformers >= 4.19.0
+torch >= 1.11.0
+flask >= 2.0.1
+pytest >= 6.2.5
+pytest-cov >= 3.0.0
+pylint >= 2.8.2
+black >= 22.3.0
+isort >= 5.10.0
