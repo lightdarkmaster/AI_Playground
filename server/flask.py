@@ -10,7 +10,8 @@ def hello_world():
 def predict():
     data = request.get_json()
     # process data here
-    return jsonify({'result': 'success'})
+    prediction = data.get('input', 'no input provided') if data else 'no data'
+    return jsonify({'result': 'success', 'prediction': prediction})
 
 if __name__ == '__main__':
     app.run(debug=True)
